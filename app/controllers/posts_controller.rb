@@ -13,7 +13,7 @@ class PostsController < ApplicationController
       p @posts.total_pages
     else
         @posts = Post.order('id DESC').paginate(:page => params[:page], :per_page => 15)
-      render :json => @posts
+      # render :json => @posts
     end  
   end
 
