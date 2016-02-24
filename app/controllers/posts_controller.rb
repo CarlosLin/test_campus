@@ -12,7 +12,7 @@ class PostsController < ApplicationController
       @posts = Post.search(params[:search], params[:page])
       p @posts.total_pages
     else
-        @posts = Post.order('id DESC').paginate(:page => params[:page], :per_page => 8)
+        @posts = Post.order('id DESC').paginate(:page => params[:page], :per_page => 13)
       # render :json => @posts
     end  
   end
