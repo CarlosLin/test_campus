@@ -1,5 +1,5 @@
 require 'rubygems'
-require 'mysql'
+require 'pg'
 require 'active_support/all'
 puts "輸入你要轉換成UTF-8的UTF-16格式檔案"
 filename = gets.chomp
