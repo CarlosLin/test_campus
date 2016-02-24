@@ -1,0 +1,24 @@
+<nav id="npage">
+  <%= will_paginate @posts %>
+  <%= @posts.total_entries %>
+</nav>
+<div class="row posts"  id="masonry">
+  <% @posts.each do |post| %>
+  <div class="col-xs-6 col-md-2 box">
+    <div class="image-wrapper overlay-fade-in" >
+    <% if post.cover_image || post.avatar_file_name %>
+      <%= index_cover_image(post) %>
+    <% else %>
+      <%= image_tag "default.jpg", class: 'thumbnail'  %>
+    <% end %>
+      <div class="image-overlay-content fancybox" rel="gallery"  data-fancybox-href="posts/<%=post.id%>" href="javascript:;">
+        <h2><%= post.name %></h2>
+      </div>
+      <div class="post_data">
+        <i class="fa fa-eye"> <%= post.hits %></i>
+        <i class="fa fa-heart"><%= post.favorites.count %></i>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>

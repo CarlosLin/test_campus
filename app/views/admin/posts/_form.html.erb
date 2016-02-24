@@ -1,0 +1,7 @@
+<%= simple_form_for(@admin_post) do |f| %>
+  <%= f.error_notification %>
+  <%= f.input :name, label: 'Post Title', :input_html => {class: 'form-control'} %>
+  <%= f.input :content, as: :bootsy%>
+  <%= f.button :submit, class: 'btn btn-default' %>
+  <%= link_to "Cancel", :back, class: 'btn btn-default' %>
+<% end %>

@@ -1,0 +1,32 @@
+<article id="show-info" class="text">
+  <%= render 'detail' %>
+</article>
+<hr>
+<div class="text-info">
+  <%= link_to "Home", root_path, class: "btn btn-default" %>
+  <%= render 'like' %>
+  <% if @post.user == current_user  %>
+    <%= link_to "Edit", edit_post_path(@post), class: "btn btn-default" %>
+    <%= link_to "Delete", post_path(@post), method: :delete, class: "btn btn-default" %>
+  <% end %>
+  <%= social_share_button_tag(@post.name, :popup => "true", :url => "http://127.0.0.1:3000/posts/#{@post.id}", :desc => "The best Search") %>
+</div>
+<h2><%= pluralize(@post.messages.count, "Reply")%></h2>
+<% @messages.each do | message| %>
+  <div class="message">
+    <p class="username"><%= message.user.name %></p>
+    <p class="time"><%= time_ago_in_words(message.created_at) %></p>
+    <p class="msg"><%= message.msg %></p>
+  </div>
+<% end %>
+
+<%= render 'messages/form' %>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    var post_id     = <%= @post[:id] %>
+    var favorite_id = <%= @favorite_id %>
+    alertModule.initialize(post_id, favorite_id);
+    alertModule.likeOrDislike();
+  });
+</script>

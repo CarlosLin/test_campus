@@ -1,0 +1,15 @@
+<div class="container">
+  <h3>喜歡的文章</h3>
+  <table class="table table-hover">
+    <tr>
+      <td>#</td>
+      <td>Title</td>
+    </tr>
+    <% @favorites.order('favoritable_type, favoritable_id').each_with_index do |t, idx| %>
+      <tr>
+        <td><%= (idx+1) %></td>
+        <td><%= link_to t.favoritable[:name], t.favoritable %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>

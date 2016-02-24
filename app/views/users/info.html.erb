@@ -1,0 +1,14 @@
+<div class="container">
+	<div class="row">
+		<div class="info-pic"></div>
+		<div class="left-info">
+		  <h3>發文數: <%= link_to current_user.posts.count, historys_path %></h3>
+		</div>
+		<div class="left-info">
+		  <h3>喜歡數: <%= link_to current_user.favorites.count, user_path(current_user) %></h3>
+	  </div>
+	  <h4><%= current_user.name %></h4>
+	  <h4><%= current_user.email %></h4>
+	  <h3><%= current_user.roles[0].name %></h3>
+  </div>
+</div>

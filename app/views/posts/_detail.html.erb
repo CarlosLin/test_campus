@@ -1,0 +1,8 @@
+<h1><%= @post.name %></h1>
+  <% if @post.user_id? %>
+    <h5><%= @post.user.name %> | <%= @post.user.school.name unless @post.user.school_id.blank? %></h5>
+    <h5>發佈於: <%= @post.created_at %></h5>
+  <% else %>
+    <h5>Post from <%= link_to "PTT",@post.ptt_post_link, target: '_blank' %></h5>
+  <% end %>
+<h3><%= simple_format(@post.content) %></h3>

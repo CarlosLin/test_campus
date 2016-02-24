@@ -1,0 +1,21 @@
+<div class="container">
+  <h3>歷史紀錄</h3>
+  <table class="table table-hover table-responsive">
+    <tr class="table-row">
+      <td>#</td>
+      <td>PostName</td>
+      <td><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></td>
+      <td><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></td>
+      <td><span class="glyphicon glyphicon-trash" aria-hidden="true"></td>
+    </tr>
+    <% current_user.posts.each_with_index do |f, idx| %>
+      <tr>
+        <td><%= (idx+1) %></td>
+        <td><%= link_to f.name, post_path(f) %></td>
+        <td><%= f.messages.count %></td>
+        <td><%= f.favorites.count %></td>
+        <td><%= link_to "Delete", post_path(f), method: :delete, class: 'btn btn-warning', data: { confirm: 'are you sure?'} %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>

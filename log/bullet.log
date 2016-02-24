@@ -1,0 +1,278 @@
+2015-12-30 22:31:32[WARN] user: carlos
+http://localhost:3000/posts/2
+N+1 Query detected
+  Message => [:user]
+  Add to your finder: :includes => [:user]
+N+1 Query method call stack
+  /Users/carlos/campus/app/views/posts/show.html.erb:24:in `block in _app_views_posts_show_html_erb___1130712833230583476_70326723119960'
+  /Users/carlos/campus/app/views/posts/show.html.erb:22:in `_app_views_posts_show_html_erb___1130712833230583476_70326723119960'
+
+/Users/carlos/campus/app/views/posts/show.html.erb:24:in `block in _app_views_posts_show_html_erb___1130712833230583476_70326723119960'
+/Users/carlos/campus/app/views/posts/show.html.erb:22:in `_app_views_posts_show_html_erb___1130712833230583476_70326723119960'2015-12-31 00:02:08[WARN] user: carlos
+http://localhost:3000/users/9
+N+1 Query detected
+  Favorite => [:favoritable]
+  Add to your finder: :includes => [:favoritable]
+N+1 Query method call stack
+  /Users/carlos/campus/app/views/users/show.html.erb:13:in `block in _app_views_users_show_html_erb__916120467397140694_70137063728100'
+  /Users/carlos/campus/app/views/users/show.html.erb:10:in `_app_views_users_show_html_erb__916120467397140694_70137063728100'
+
+/Users/carlos/campus/app/views/users/show.html.erb:13:in `block in _app_views_users_show_html_erb__916120467397140694_70137063728100'
+/Users/carlos/campus/app/views/users/show.html.erb:10:in `_app_views_users_show_html_erb__916120467397140694_70137063728100'2015-12-31 00:59:42[WARN] user: carlos
+http://localhost:3000/users/9
+N+1 Query detected
+  Favorite => [:favoritable]
+  Add to your finder: :includes => [:favoritable]
+N+1 Query method call stack
+  /Users/carlos/campus/app/views/users/show.html.erb:13:in `block in _app_views_users_show_html_erb__916120467397140694_70137063728100'
+  /Users/carlos/campus/app/views/users/show.html.erb:10:in `_app_views_users_show_html_erb__916120467397140694_70137063728100'
+
+/Users/carlos/campus/app/views/users/show.html.erb:13:in `block in _app_views_users_show_html_erb__916120467397140694_70137063728100'
+/Users/carlos/campus/app/views/users/show.html.erb:10:in `_app_views_users_show_html_erb__916120467397140694_70137063728100'2016-01-02 18:33:38[WARN] user: carlos
+http://localhost:3000/users/1
+N+1 Query detected
+  Favorite => [:favoritable]
+  Add to your finder: :includes => [:favoritable]
+N+1 Query method call stack
+  /Users/carlos/campus/app/views/users/show.html.erb:13:in `block in _app_views_users_show_html_erb___1377845577041076056_70334334835480'
+  /Users/carlos/campus/app/views/users/show.html.erb:10:in `_app_views_users_show_html_erb___1377845577041076056_70334334835480'
+
+/Users/carlos/campus/app/views/users/show.html.erb:13:in `block in _app_views_users_show_html_erb___1377845577041076056_70334334835480'
+/Users/carlos/campus/app/views/users/show.html.erb:10:in `_app_views_users_show_html_erb___1377845577041076056_70334334835480'2016-01-02 18:38:10[WARN] user: carlos
+http://localhost:3000/users/1
+N+1 Query detected
+  Favorite => [:favoritable]
+  Add to your finder: :includes => [:favoritable]
+N+1 Query method call stack
+  /Users/carlos/campus/app/views/users/show.html.erb:13:in `block in _app_views_users_show_html_erb___1377845577041076056_70334351375080'
+  /Users/carlos/campus/app/views/users/show.html.erb:10:in `_app_views_users_show_html_erb___1377845577041076056_70334351375080'
+
+/Users/carlos/campus/app/views/users/show.html.erb:13:in `block in _app_views_users_show_html_erb___1377845577041076056_70334351375080'
+/Users/carlos/campus/app/views/users/show.html.erb:10:in `_app_views_users_show_html_erb___1377845577041076056_70334351375080'2016-02-04 20:41:51[WARN] user: carlos
+http://localhost:3000/index
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-04 20:41:55[WARN] user: carlos
+http://localhost:3000/index?page=2
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-04 20:42:09[WARN] user: carlos
+http://localhost:3000/index?page=3
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-04 20:44:16[WARN] user: carlos
+http://localhost:3000/index
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-04 20:44:22[WARN] user: carlos
+http://localhost:3000/index?page=2
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-04 20:46:42[WARN] user: carlos
+http://localhost:3000/index?page=3
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-04 20:46:49[WARN] user: carlos
+http://localhost:3000/index?page=4
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-04 20:46:53[WARN] user: carlos
+http://localhost:3000/index?page=5
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-04 20:46:58[WARN] user: carlos
+http://localhost:3000/index?page=6
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-04 20:53:23[WARN] user: carlos
+http://localhost:3000/index?utf8=%E2%9C%93&search=g&_=1454590029799
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-04 20:54:07[WARN] user: carlos
+http://localhost:3000/index?utf8=%E2%9C%93&search=gk&_=1454590029800
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-04 20:54:10[WARN] user: carlos
+http://localhost:3000/index?utf8=%E2%9C%93&search=g&_=1454590029801
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-04 20:54:10[WARN] user: carlos
+http://localhost:3000/index?utf8=%E2%9C%93&search=&_=1454590029802
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-04 20:54:13[WARN] user: carlos
+http://localhost:3000/index?utf8=%E2%9C%93&search=y&_=1454590029803
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-04 20:54:16[WARN] user: carlos
+http://localhost:3000/index?utf8=%E2%9C%93&search=y&_=1454590029805
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-04 20:54:17[WARN] user: carlos
+http://localhost:3000/index?utf8=%E2%9C%93&search=&_=1454590029806
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-04 20:54:30[WARN] user: carlos
+http://localhost:3000/index?_=1454590029806&page=2&search=&utf8=%E2%9C%93
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-04 20:54:40[WARN] user: carlos
+http://localhost:3000/index?_=1454590029806&page=3&search=&utf8=%E2%9C%93
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-04 20:54:50[WARN] user: carlos
+http://localhost:3000/index?_=1454590029806&page=4&search=&utf8=%E2%9C%93
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-04 20:54:54[WARN] user: carlos
+http://localhost:3000/index?_=1454590029806&page=5&search=&utf8=%E2%9C%93
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-04 20:59:34[WARN] user: carlos
+http://localhost:3000/index?utf8=%E2%9C%93&search=&_=1454590029807
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-04 20:59:34[WARN] user: carlos
+http://localhost:3000/index?utf8=%E2%9C%93&search=&_=1454590029808
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-18 20:46:52[WARN] user: carlos
+http://localhost:3000/index?utf8=%E2%9C%93&search=d&_=1455799605375
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-18 20:47:00[WARN] user: carlos
+http://localhost:3000/index?utf8=%E2%9C%93&search=&_=1455799605376
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-18 20:47:02[WARN] user: carlos
+http://localhost:3000/index?utf8=%E2%9C%93&search=a&_=1455799605377
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-18 20:47:06[WARN] user: carlos
+http://localhost:3000/index?utf8=%E2%9C%93&search=&_=1455799605378
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-18 20:47:07[WARN] user: carlos
+http://localhost:3000/index?utf8=%E2%9C%93&search=fb&_=1455799605379
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-18 20:47:08[WARN] user: carlos
+http://localhost:3000/index?utf8=%E2%9C%93&search=fb&_=1455799605380
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-18 20:47:12[WARN] user: carlos
+http://localhost:3000/index?utf8=%E2%9C%93&search=f&_=1455799605381
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-18 20:47:12[WARN] user: carlos
+http://localhost:3000/index?utf8=%E2%9C%93&search=&_=1455799605382
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-18 20:47:13[WARN] user: carlos
+http://localhost:3000/index?utf8=%E2%9C%93&search=f&_=1455799605383
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-18 20:47:13[WARN] user: carlos
+http://localhost:3000/index?utf8=%E2%9C%93&search=fb&_=1455799605384
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-18 20:47:15[WARN] user: carlos
+http://localhost:3000/index?utf8=%E2%9C%93&search=f&_=1455799605385
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-18 20:47:15[WARN] user: carlos
+http://localhost:3000/index?utf8=%E2%9C%93&search=&_=1455799605386
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-18 20:47:16[WARN] user: carlos
+http://localhost:3000/index?utf8=%E2%9C%93&search=d&_=1455799605387
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-18 20:47:17[WARN] user: carlos
+http://localhost:3000/index?utf8=%E2%9C%93&search=&_=1455799605388
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-24 15:00:40[WARN] user: carlos
+http://localhost:3000/index?utf8=%E2%9C%93&search=d&_=1456297235712
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-24 15:00:46[WARN] user: carlos
+http://localhost:3000/index?utf8=%E2%9C%93&search=&_=1456297235713
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+

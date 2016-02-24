@@ -1,0 +1,8 @@
+<%= simple_form_for @post do |f| %>
+  <%= f.input :avatar, label: 'Cover Image', hint: '若無特定，隨機給圖。' %>
+  <%= collection_select(:post, :type_id, Type.all, :id, :type_name) %>
+  <%= f.input :name, label: 'Post Title', :input_html => {class: 'form-control'} %>
+  <%= f.input :content, as: :bootsy%>
+  <%= f.button :submit, class: 'btn btn-default' %>
+  <%= link_to "Cancel", :back, class: 'btn btn-default' %>
+<% end %>

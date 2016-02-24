@@ -1,0 +1,4 @@
+<%= simple_form_for([@post, @post.messages.build]) do |f| %>
+  <%= f.input :msg, label: 'Reply to thread',:as => :text, :input_html => {class: 'form-control', :rows => 3} %>
+  <%= f.submit :submit, class: 'btn btn-sucess' %>
+<% end %>

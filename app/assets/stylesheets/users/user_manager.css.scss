@@ -1,0 +1,32 @@
+//= require_tree .
+//= require_self
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+/********table style*********/
+.table {
+	text-align :  center;
+	background-color: #FEFFEA;
+	width: 80%;
+	margin-top: 40px;
+	border-radius: 10px;
+	box-shadow:3px 3px 5px 6px #cccccc;
+}
+.table-row {
+	background-color: #FFE7C0;
+}
+.more {
+	margin-left: 70%;
+}
+/********info  **********/
+.left-info {
+	display: inline-block;
+}
+.info-pic {
+	border-radius: 100px;
+	background-color: #232323;
+	height: 130px;
+	width: 130px;
+	margin: 70px 0 0 0;
+
+}

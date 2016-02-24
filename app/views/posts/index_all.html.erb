@@ -1,0 +1,32 @@
+<%= link_to 'New', new_post_path, class: 'btn btn-default' %>
+<%= form_tag(index_all_path, :method => "get", id: "search-form") do %>
+    <%= text_field_tag :search, params[:search], placeholder: "Search Posts" %>
+    <%= submit_tag "Search" %>
+<% end %>
+<div id="posttt">
+  <%= render 'posts' %>
+</div>
+<script type="text/javascript">
+  indexShow.initialize();
+  $(function () {
+    $("#search-form input").keyup(function () {
+      $.get($("#search-form").attr("action"), $("#search-form").serialize()
+          , function () {
+            var $container = $('#masonry');
+            $container.masonry({
+              columnWidth: 10,
+              itemSelector: '.box',
+              gutter: 20
+            });
+            $container.imagesLoaded(function () {
+              $container.masonry('reloadItems');
+            });
+            console.log('------------------ddd-----------')
+            indexShow.scroll();
+            indexShow.initialize();
+          }
+          , "script");
+      return false;
+    });
+  });
+</script>
