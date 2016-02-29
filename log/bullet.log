@@ -276,3 +276,33 @@ Unused Eager Loading detected
   Post => [:favorites]
   Remove from your finder: :includes => [:favorites]
 
+2016-02-24 16:36:52[WARN] user: carlos
+http://localhost:3000/index?utf8=%E2%9C%93&search=a&_=1456302999019
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-24 16:36:57[WARN] user: carlos
+http://localhost:3000/index?_=1456302999019&page=2&search=a&utf8=%E2%9C%93
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-24 16:37:03[WARN] user: carlos
+http://localhost:3000/index?_=1456302999019&page=3&search=a&utf8=%E2%9C%93
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-24 16:37:05[WARN] user: carlos
+http://localhost:3000/index?_=1456302999019&page=4&search=a&utf8=%E2%9C%93
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
+2016-02-24 16:37:06[WARN] user: carlos
+http://localhost:3000/index?_=1456302999019&page=5&search=a&utf8=%E2%9C%93
+Unused Eager Loading detected
+  Post => [:favorites]
+  Remove from your finder: :includes => [:favorites]
+
